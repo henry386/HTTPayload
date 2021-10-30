@@ -38,6 +38,7 @@ namespace Remote_Access_Command_Line_Interface
 
         static async Task Main(string[] args)
         {
+            //set Server IP Address and port here
             string ip_address = "192.168.1.64";
             int port = 80;
             int current_command = 0;
