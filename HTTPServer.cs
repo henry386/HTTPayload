@@ -26,6 +26,7 @@ namespace http_server
                 IPEndPoint endPoint = socket.LocalEndPoint as IPEndPoint;
                 localIP = endPoint.Address.ToString();
             }
+            //set http port and ip-address here by replacing 'localIP' and '80'
             server.Prefixes.Add("http://" + localIP + ":80/");
             server.Start();   // and start the server        
             using (PowerShell powerShell = PowerShell.Create())
